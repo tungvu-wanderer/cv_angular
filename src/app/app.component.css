@@ -1,0 +1,19 @@
+
+.container {
+  display: flex;
+  width: 800px;
+  margin: 50px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+app-left-column {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+app-right-column {
+  width: 25%;
+  padding: 20px;
+  background-color: #f7f7f7;
+}
