@@ -1,1 +1,7 @@
-<p>experience works!</p>
+<div class="main-section">
+  <h2 class="main-section-title">Experiences</h2>
+  <app-experience-item
+    *ngFor="let company of companies"
+    [company]="company"
+  ></app-experience-item>
+</div>

@@ -26,5 +26,17 @@ export class CertificationComponent {
       dateIssued: '05/2021',
       dateExpired: '05/2026',
     },
+    {
+      name: 'Oracle Certified Professional, Java SE 8 Programmer',
+      url: 'https://www.credly.com/badges/7616b1a7-b953-4ad8-8ae6-4fbb3a13bf80',
+      issuer: 'Oracle',
+      dateIssued: '09/2020',
+    },
+    {
+      name: 'Oracle Certified Associate, Java SE 8 Programmer',
+      url: 'https://www.credly.com/badges/19ac83e4-4243-46ad-89ee-a69774d4432f',
+      issuer: 'Oracle',
+      dateIssued: '08/2019',
+    },
   ];
 }

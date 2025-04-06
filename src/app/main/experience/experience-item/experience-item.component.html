@@ -1,1 +1,21 @@
-<p>experience-item works!</p>
+<div class="main-section-item">
+  <h3 class="item-title">
+    {{ company.title }}
+  </h3>
+  <p class="item-subtitle">{{ company.name }} ({{ company.date }})</p>
+  <div class="item-details">
+    <div *ngFor="let detailLevel1 of company.details">
+      <p *ngIf="detailLevel1.content">{{ detailLevel1.content }}</p>
+      <ul *ngIf="detailLevel1.details">
+        <li *ngFor="let detailLevel2 of detailLevel1.details">
+          <p *ngIf="detailLevel2.content">{{ detailLevel2.content }}</p>
+          <ul *ngIf="detailLevel2.details">
+            <li *ngFor="let detailLevel3 of detailLevel2.details">
+              <p>{{ detailLevel3.content }}</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,91 +1,80 @@
-@import "tailwindcss";
+/* ==========================================================================
+   Table of Contents:
+   1. Variables / Custom Properties
+   2. Global Styles
+   3. Layout Styles
+   4. Base Element Styles
+   5. Sidebar Styles
+   6. Main Content Styles
+      6.1. Experience Section
+      6.2. Education Section
+      6.3. Projects Section (Example - Adjust as needed)
+   7. Utility Classes
+   8. Responsive Styles
+   ========================================================================== */
 
-/* Global Styles (similar to before, but potentially with a different font) */
+/* ==========================================================================
+   1. Variables / Custom Properties
+   ========================================================================== */
+
+:root {
+  --primary-color: #2c8c99;
+  --text-primary: #333;
+  --text-secondary: #555;
+  --text-light: #777;
+  --background-body: #f8f8f8;
+  --background-container: #fff;
+  --background-sidebar: #f0f0f0;
+  --background-skill-item: #e0e0e0;
+  --border-color: #eee;
+  --spacing-sm: 0.25em;
+  --spacing-md: 0.5em;
+  --spacing-lg: 1em;
+  --spacing-xl: 1.5em;
+  --spacing-2xl: 2.5em;
+  --font-size-base: 16px; /* Assuming a base font size */
+}
+
+/* ==========================================================================
+     2. Global Styles
+     ========================================================================== */
+
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* A clean sans-serif */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   margin: 0;
-  padding: 20px;
-  background-color: #f8f8f8; /* Slightly warmer light background */
-  color: #333;
+  padding: var(--spacing-md);
+  background-color: var(--background-body);
+  color: var(--text-primary);
+  font-size: var(--font-size-base);
 }
+
+/* ==========================================================================
+     3. Layout Styles
+     ========================================================================== */
 
 .container {
-  max-width: 1100px; /* Adjust for a wider layout */
-  margin: 40px auto; /* Add some top/bottom margin */
-  background-color: #fff;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05); /* Softer, wider shadow */
+  max-width: 1100px;
+  margin: var(--spacing-xl) auto;
+  background-color: var(--background-container);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
   border-radius: 5px;
-  display: grid; /* Use CSS Grid for the two-column layout */
-  grid-template-columns: 300px 1fr; /* Adjust column widths as needed */
-  gap: 30px; /* Spacing between columns */
-  padding: 40px;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: var(--spacing-xl);
+  padding: var(--spacing-xl);
 }
 
-/* Sidebar Styles */
-.sidebar {
-  background-color: #f0f0f0; /* Light gray background for the sidebar */
-  padding: 30px;
-  border-radius: 5px;
-}
-
-.profile-picture {
-  /* Style your profile picture here */
-  width: 100%;
-  border-radius: 50%; /* Make it circular */
-  margin-bottom: 20px;
-}
-
-.contact-info p,
-.skills-section ul,
-.languages-section ul {
-  padding: 0;
-  list-style: none;
-  margin-bottom: 15px;
-}
-
-.contact-info li {
-  display: flex;
-  align-items: center;
-  margin-bottom: 8px;
-  color: #555;
-}
-
-.contact-info li i {
-  /* Style your icons (you'll need to include an icon library like Font Awesome) */
-  margin-right: 10px;
-  color: #2c8c99; /* Similar to the accent color on the example CV */
-  font-size: 1.1em;
-}
-
-.skills-list,
-.languages-list {
-  /* Style your skill and language lists */
-}
-
-.skill-item,
-.language-item {
-  background-color: #e0e0e0;
-  color: #444;
-  padding: 5px 10px;
-  border-radius: 3px;
-  margin-right: 5px;
-  margin-bottom: 5px;
-  display: inline-block;
-  font-size: 0.9em;
-}
-
-/* Main Content Styles */
-.main-content {
-  padding: 30px;
-}
+/* ==========================================================================
+     4. Base Element Styles
+     ========================================================================== */
 
 h1,
 h2,
 h3 {
-  color: #2c8c99; /* Use the accent color for headings */
-  margin-top: 1em;
-  margin-bottom: 0.5em;
+  color: var(--primary-color);
+  margin-top: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
   font-weight: bold;
 }
 
@@ -100,22 +89,108 @@ h2 {
 
 h3 {
   font-size: 1.4em;
-  color: #555; /* Slightly darker for subheadings */
+  /* color: var(--text-secondary); */
+}
+
+p {
+  margin-top: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  padding-left: 20px;
+  margin-top: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+li {
+  margin-top: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+}
+
+/* ==========================================================================
+     5. Sidebar Styles
+     ========================================================================== */
+
+.sidebar {
+  background-color: var(--background-sidebar);
+  padding: var(--spacing-lg);
+  border-radius: 5px;
+}
+
+.profile-picture {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: var(--spacing-lg);
+}
+
+.contact-info ul,
+.skills-section ul,
+.languages-section ul {
+  padding: 0;
+  list-style: none;
+  margin-bottom: var(--spacing-lg);
+}
+
+.contact-info li {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--spacing-sm);
+  color: var(--text-secondary);
+}
+
+.contact-info li i {
+  margin-right: var(--spacing-sm);
+  color: var(--primary-color);
+  font-size: 1.1em;
+}
+
+.skills-list,
+.languages-list {
+  /* Style your skill and language lists further if needed */
+}
+
+.skill-item,
+.language-item {
+  background-color: var(--background-skill-item);
+  color: var(--text-secondary);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: 3px;
+  margin-right: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+  display: inline-block;
+  font-size: 0.9em;
+}
+
+/* ==========================================================================
+     6. Main Content Styles
+     ========================================================================== */
+
+.main-content {
+  padding: var(--spacing-lg);
 }
 
 .main-section {
-  margin-bottom: 30px;
+  margin-bottom: var(--spacing-xl);
 }
 
 .main-section-title {
-  border-bottom: 2px solid #eee;
-  padding-bottom: 0.5em;
-  margin-bottom: 1.5em;
-  color: #333;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
 }
 
 .main-section-item {
-  margin-bottom: 20px;
+  margin-bottom: var(--spacing-xl);
 }
 
 .item-title {
@@ -124,39 +199,63 @@ h3 {
 }
 
 .item-subtitle {
-  color: #777;
+  color: var(--text-secondary);
   font-style: italic;
-  margin-bottom: 0.8em;
+  margin-bottom: var(--spacing-md);
   display: flex;
-  justify-content: space-between; /* To align title and date */
+  justify-content: space-between;
   align-items: center;
 }
 
-.link a {
-  margin-right: 10px;
-  color: #2c8c99;
-  text-decoration: none;
+.item-details ul {
+  padding-left: var(--spacing-2xl);
 }
 
-.link a:hover {
+.item-details li {
+  margin-bottom: var(--spacing-sm);
+}
+
+/* 6.1. Experience Section */
+.experience-item {
+  margin-bottom: var(--spacing-xl);
+}
+
+/* 6.2. Education Section */
+.education-item {
+  margin-bottom: var(--spacing-xl);
+}
+
+/* ==========================================================================
+     7. Utility Classes
+     ========================================================================== */
+
+.link a {
+  color: var(--primary-color);
   text-decoration: underline;
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  padding-top: 30px;
-  color: #777;
-  font-size: 0.9em;
-}
+/* .link a:hover {
+  text-decoration: underline;
+} */
 
-/* Responsive Design (Example - adjust breakpoints as needed) */
+/* ==========================================================================
+     8. Responsive Styles
+     ========================================================================== */
+
 @media (max-width: 768px) {
   .container {
-    grid-template-columns: 1fr; /* Stack columns on smaller screens */
+    grid-template-columns: 1fr; /* Stack columns */
+    padding: var(--spacing-md);
+    gap: var(--spacing-lg);
+    margin: var(--spacing-lg) auto;
   }
 
   .sidebar {
-    margin-bottom: 30px;
+    margin-bottom: var(--spacing-lg);
+    padding: var(--spacing-md);
+  }
+
+  .main-content {
+    padding: var(--spacing-md);
   }
 }
