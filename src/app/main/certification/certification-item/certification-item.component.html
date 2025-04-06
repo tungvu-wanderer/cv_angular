@@ -1,0 +1,14 @@
+<div class="main-section-item">
+  <h3 class="item-title link">
+    <a [href]="certification.url" target="_blank" rel="noopener noreferrer">
+      {{ certification.name }}
+    </a>
+  </h3>
+  <p class="item-subtitle">{{ certification.issuer }}</p>
+  <p>
+    {{ certification.dateIssued }}
+    <ng-container *ngIf="certification.dateExpired">
+      - {{ certification.dateExpired }}
+    </ng-container>
+  </p>
+</div>
