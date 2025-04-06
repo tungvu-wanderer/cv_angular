@@ -11,11 +11,12 @@
       6.3. Projects Section (Example - Adjust as needed)
    7. Utility Classes
    8. Responsive Styles
-   ========================================================================== */
+   9. Printing Styles
+========================================================================== */
 
 /* ==========================================================================
    1. Variables / Custom Properties
-   ========================================================================== */
+========================================================================== */
 
 :root {
   --primary-color: #2c8c99;
@@ -36,8 +37,8 @@
 }
 
 /* ==========================================================================
-     2. Global Styles
-     ========================================================================== */
+    2. Global Styles
+========================================================================== */
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -50,8 +51,8 @@ body {
 }
 
 /* ==========================================================================
-     3. Layout Styles
-     ========================================================================== */
+    3. Layout Styles
+========================================================================== */
 
 .container {
   max-width: 1100px;
@@ -60,14 +61,14 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
   border-radius: 5px;
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 250px 1fr;
   gap: var(--spacing-xl);
   padding: var(--spacing-xl);
 }
 
 /* ==========================================================================
-     4. Base Element Styles
-     ========================================================================== */
+    4. Base Element Styles
+========================================================================== */
 
 h1,
 h2,
@@ -118,19 +119,36 @@ li {
 }
 
 /* ==========================================================================
-     5. Sidebar Styles
-     ========================================================================== */
+    5. Sidebar Styles
+========================================================================== */
 
 .sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: var(--background-sidebar);
   padding: var(--spacing-lg);
   border-radius: 5px;
 }
 
+.profile {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
 .profile-picture {
-  width: 100%;
+  max-width: 250px;
+  aspect-ratio: 1;
   border-radius: 50%;
-  margin-bottom: var(--spacing-lg);
+  overflow: hidden;
+  margin-bottom: var(--spacing-md);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .contact-info ul,
@@ -172,8 +190,8 @@ li {
 }
 
 /* ==========================================================================
-     6. Main Content Styles
-     ========================================================================== */
+    6. Main Content Styles
+========================================================================== */
 
 .main-content {
   padding: var(--spacing-lg);
@@ -226,8 +244,8 @@ li {
 }
 
 /* ==========================================================================
-     7. Utility Classes
-     ========================================================================== */
+    7. Utility Classes
+========================================================================== */
 
 .link a {
   color: var(--primary-color);
@@ -239,12 +257,11 @@ li {
 } */
 
 /* ==========================================================================
-     8. Responsive Styles
-     ========================================================================== */
-
+    8. Responsive Styles
+========================================================================== */
 @media (max-width: 768px) {
   .container {
-    grid-template-columns: 1fr; /* Stack columns */
+    grid-template-columns: 1fr;
     padding: var(--spacing-md);
     gap: var(--spacing-lg);
     margin: var(--spacing-lg) auto;
@@ -257,5 +274,107 @@ li {
 
   .main-content {
     padding: var(--spacing-md);
+  }
+}
+
+/* ==========================================================================
+    9. Printing Styles
+========================================================================== */
+@media print {
+  /* Styles that apply only when printing */
+  body {
+    font-size: 12pt; /* Adjust base font size for print */
+    line-height: 1.4;
+    background-color: #fff !important; /* Force white background */
+    color: #000 !important; /* Force black text */
+    padding: 20mm; /* Adjust print margins */
+  }
+
+  .container {
+    max-width: 100%; /* Take full width of the printed page */
+    margin: 0;
+    padding: 0;
+    box-shadow: none !important; /* Remove shadow */
+    border-radius: 0;
+    display: block; /* Revert to block layout */
+  }
+
+  .sidebar {
+    padding: 0;
+  }
+
+  .profile-picture {
+    width: 50%;
+  }
+
+  .main-content {
+    padding: 0;
+  }
+
+  .main-section {
+    margin-bottom: 15mm; /* Adjust spacing between sections for print */
+    border-bottom: 1px solid #ccc; /* Add subtle section separators */
+    padding-bottom: 10mm;
+  }
+
+  .main-section:last-child {
+    border-bottom: none; /* Remove bottom border from the last section */
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: #000 !important; /* Ensure headings are black */
+    break-after: avoid; /* Try to prevent headings from being the last thing on a page */
+  }
+
+  .item-subtitle {
+    display: block; /* Ensure company and date are on separate lines if needed */
+    font-style: normal; /* Remove italics for better readability */
+    color: #333 !important;
+    margin-bottom: 5px;
+  }
+
+  .item-subtitle span {
+    display: inline; /* Keep date inline with company */
+    font-weight: normal;
+    color: #555 !important;
+    font-size: 0.9em;
+  }
+
+  .skills-section,
+  .languages-section {
+    display: block !important; /* Ensure skills/languages are visible if you choose to print them */
+  }
+
+  .skills-list,
+  .languages-list {
+    display: block !important; /* List skills/languages vertically */
+  }
+
+  .skill-item,
+  .language-item {
+    display: inline-block; /* Keep skills/languages inline with some spacing */
+    margin-right: 5px;
+    margin-bottom: 2px;
+    background-color: transparent !important; /* Remove background */
+    border: 1px solid #ccc; /* Add a border if needed */
+    padding: 2px 5px;
+    border-radius: 3px;
+    color: #000 !important;
+  }
+
+  /* Hide any interactive elements or links that are not useful in print */
+  a {
+    text-decoration: none !important;
+    color: #000 !important; /* Ensure links are black */
+  }
+
+  a::after {
+    content: " (" attr(href) ")"; /* Optionally show the URL after links */
+    font-size: 0.8em;
+    color: #777;
   }
 }
