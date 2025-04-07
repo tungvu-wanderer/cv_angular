@@ -136,8 +136,11 @@ li {
   margin-bottom: var(--spacing-xl);
 }
 
-.profile-picture {
+.profile-picture-container {
   max-width: 250px;
+}
+
+.profile-picture {
   aspect-ratio: 1;
   border-radius: 50%;
   overflow: hidden;
@@ -300,11 +303,18 @@ li {
   }
 
   .sidebar {
-    padding: 0;
+    padding: var(--spacing-md);
   }
 
-  .profile-picture {
-    width: 50%;
+  .profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile-picture-container {
+    max-width: 150px;
   }
 
   .main-content {
