@@ -1,1 +1,7 @@
-<p>education works!</p>
+<div class="side-section">
+  <h3 class="side-section-title">Education</h3>
+  <app-education-item
+    *ngFor="let degree of degrees"
+    [degree]="degree"
+  ></app-education-item>
+</div>

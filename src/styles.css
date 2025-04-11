@@ -165,25 +165,21 @@ span.size-40 {
   object-fit: cover;
 }
 
-.contact-info ul,
+.contact-item {
+  color: var(--primary-color);
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.contact-item img {
+  height: 24px;
+}
+
 .skills-section ul,
 .languages-section ul {
   padding: 0;
   list-style: none;
   margin-bottom: var(--spacing-lg);
-}
-
-.contact-info li {
-  display: flex;
-  align-items: center;
-  margin-bottom: var(--spacing-sm);
-  color: var(--text-secondary);
-}
-
-.contact-info li i {
-  margin-right: var(--spacing-sm);
-  color: var(--primary-color);
-  font-size: 1.1em;
 }
 
 .skills-list,
