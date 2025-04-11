@@ -1,4 +1,8 @@
 .profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   margin-bottom: var(--spacing-xl);
 }
@@ -22,13 +26,6 @@
 }
 
 @media print {
-  .profile {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
   .profile-picture-container {
     max-width: 150px;
   }
