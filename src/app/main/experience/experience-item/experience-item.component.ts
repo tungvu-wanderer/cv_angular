@@ -17,6 +17,7 @@ export interface Detail {
   selector: 'app-experience-item',
   imports: [NgFor, NgIf],
   templateUrl: './experience-item.component.html',
+  styleUrl: './experience-item.component.css',
 })
 export class ExperienceItemComponent {
   @Input() company!: Company;

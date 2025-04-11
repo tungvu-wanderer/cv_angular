@@ -11,6 +11,7 @@ export interface Degree {
   selector: 'app-education-item',
   imports: [],
   templateUrl: './education-item.component.html',
+  styleUrl: './education-item.component.css',
 })
 export class EducationItemComponent {
   @Input() degree!: Degree;

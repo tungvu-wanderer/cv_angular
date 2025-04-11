@@ -4,5 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-language',
   imports: [],
   templateUrl: './language.component.html',
+  styleUrl: './language.component.css',
 })
 export class LanguageComponent {}

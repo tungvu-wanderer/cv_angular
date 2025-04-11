@@ -9,6 +9,7 @@ import { NgFor } from '@angular/common';
   selector: 'app-experience',
   imports: [NgFor, ExperienceItemComponent],
   templateUrl: './experience.component.html',
+  styleUrl: './experience.component.css',
 })
 export class ExperienceComponent {
   companies: Company[] = [

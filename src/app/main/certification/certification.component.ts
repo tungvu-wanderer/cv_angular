@@ -10,6 +10,7 @@ import { NgFor } from '@angular/common';
   selector: 'app-certification',
   imports: [NgFor, CertificationItemComponent],
   templateUrl: './certification.component.html',
+  styleUrl: './certification.component.css',
 })
 export class CertificationComponent {
   certifications: Certification[] = [

@@ -9,6 +9,7 @@ import {
   selector: 'app-education',
   imports: [NgFor, EducationItemComponent],
   templateUrl: './education.component.html',
+  styleUrl: './education.component.css',
 })
 export class EducationComponent {
   degrees: Degree[] = [

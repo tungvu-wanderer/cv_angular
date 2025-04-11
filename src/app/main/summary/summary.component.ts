@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   selector: 'app-summary',
   imports: [NgFor],
   templateUrl: './summary.component.html',
+  styleUrl: './summary.component.css',
 })
 export class SummaryComponent {
   contents: string[] = [

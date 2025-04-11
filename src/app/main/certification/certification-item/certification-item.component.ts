@@ -13,6 +13,7 @@ export interface Certification {
   selector: 'app-certification-item',
   imports: [NgIf],
   templateUrl: './certification-item.component.html',
+  styleUrl: './certification-item.component.css',
 })
 export class CertificationItemComponent {
   @Input() certification!: Certification;

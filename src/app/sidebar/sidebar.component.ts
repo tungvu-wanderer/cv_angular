@@ -13,5 +13,6 @@ import { LanguageComponent } from './language/language.component';
     LanguageComponent,
   ],
   templateUrl: './sidebar.component.html',
+  styleUrl: './sidebar.component.css',
 })
 export class SidebarComponent {}
