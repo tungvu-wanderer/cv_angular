@@ -1,0 +1,70 @@
+.main-content {
+  padding: var(--spacing-lg);
+}
+
+.main-section {
+  margin-bottom: var(--spacing-xl);
+}
+
+.main-section-title {
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.main-section-item {
+  margin-bottom: var(--spacing-xl);
+}
+
+.item-title {
+  font-weight: bold;
+  margin-bottom: 0.3em;
+}
+
+.item-subtitle {
+  color: var(--text-secondary);
+  font-style: italic;
+  margin-bottom: var(--spacing-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-details ul {
+  padding-left: var(--spacing-2xl);
+}
+
+.item-details li {
+  margin-bottom: var(--spacing-sm);
+}
+
+@media print {
+  .main-section {
+    margin-bottom: 15mm; /* Adjust spacing between sections for print */
+    border-bottom: 1px solid #ccc; /* Add subtle section separators */
+    padding-bottom: 10mm;
+  }
+
+  .main-section:last-child {
+    border-bottom: none; /* Remove bottom border from the last section */
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .item-subtitle {
+    display: block; /* Ensure company and date are on separate lines if needed */
+    font-style: normal; /* Remove italics for better readability */
+    color: #333 !important;
+    margin-bottom: 5px;
+  }
+
+  .item-subtitle span {
+    display: inline; /* Keep date inline with company */
+    font-weight: normal;
+    color: #555 !important;
+    font-size: 0.9em;
+  }
+}

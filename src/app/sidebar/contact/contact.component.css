@@ -1,0 +1,9 @@
+.contact-item {
+  color: var(--primary-color);
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.contact-item img {
+  height: 24px;
+}
