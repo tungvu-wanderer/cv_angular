@@ -1,0 +1,10 @@
+@import "../sidebar.component.css";
+
+.proficiency {
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+img {
+  max-width: 24px;
+}

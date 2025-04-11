@@ -28,7 +28,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   color: var(--primary-color);
   margin-top: var(--spacing-md);
   margin-bottom: var(--spacing-sm);
@@ -46,7 +47,11 @@ h2 {
 
 h3 {
   font-size: 1.4em;
-  /* color: var(--text-secondary); */
+}
+
+h4 {
+  color: var(--text-primary);
+  font-size: 1em;
 }
 
 p {
@@ -103,9 +108,10 @@ span.size-40 {
     color: #000 !important; /* Ensure links are black */
   }
 
-  a::after {
-    content: " (" attr(href) ")"; /* Optionally show the URL after links */
+  /* Optionally show the URL after links */
+  /* a::after {
+    content: " (" attr(href) ")";
     font-size: 0.8em;
     color: #777;
-  }
+  } */
 }
