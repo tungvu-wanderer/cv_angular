@@ -9,7 +9,6 @@ import { Component } from '@angular/core';
 })
 export class SummaryComponent {
   contents: string[] = [
-    'I’m a fast-learning, flexible, adaptive engineer as well as a caring, supportive, goal-oriented manager.',
-    'I thrive in an environment where I can bring the best value to customers as well as to the business, while providing mentoring & coaching to the juniors to help them grow to realize their full potentials.',
+    'Experienced Staff Engineer with a demonstrated history of technical leadership in designing and implementing scalable and reliable software solutions. Expertise in driving major refactoring efforts, establishing CI/CD pipelines, and mentoring junior engineers. Committed to delivering high-quality, impactful solutions that align with business goals.',
   ];
 }

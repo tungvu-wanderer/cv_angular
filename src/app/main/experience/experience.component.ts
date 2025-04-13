@@ -39,7 +39,7 @@ export class ExperienceComponent {
             },
             {
               content:
-                'Author and contribute to the PRDs & ERDs for refactoring work packages, ensuring technical feasibility and providing clear implementation guidance for the team.',
+                'Author and contribute to the PRDs and ERDs for refactoring work packages, ensuring technical feasibility and providing clear implementation guidance for the team.',
             },
           ],
         },
@@ -48,7 +48,7 @@ export class ExperienceComponent {
           details: [
             {
               content:
-                'Maintaining the current Typescript NestJS microservices system on AWS ECS, PostgreSQL (AWS RDS), with CI/CD via CircleCI & Terraform.',
+                'Maintaining the current Typescript NestJS microservices system on AWS ECS, PostgreSQL (AWS RDS), with CI/CD via CircleCI and Terraform.',
             },
             {
               content:
@@ -72,7 +72,7 @@ export class ExperienceComponent {
             },
             {
               content:
-                'Leveraged Python Flask microservices on AWS ECS and PostgreSQL (AWS RDS) with CI/CD via Bitbucket Pipelines & AWS CDK.',
+                'Leveraged Python Flask microservices on AWS ECS and PostgreSQL (AWS RDS) with CI/CD via Bitbucket Pipelines and AWS CDK.',
             },
           ],
         },
@@ -105,27 +105,19 @@ export class ExperienceComponent {
           details: [
             {
               content:
-                'Led a growing engineering team (from 4 to 6, then to 8 engineers) in building a medical concierge platform from scratch.',
+                'Led and scaled an engineering team (from 4 to 8 engineers) in the development of a medical concierge platform, implementing an effective onboarding system allowing new joiners to make their first PR on their first day.',
             },
             {
               content:
-                'Pioneered the development of an internal GenAI portal within a tight deadline.',
+                'Led the development of an internal GenAI portal, delivering it under a tight deadline.',
             },
             {
               content:
-                'Fostered a highly agile team environment, enabling rapid feature development and deployment to production within short time frames with user requests going live within an hour from ticket creation.',
+                'Established a highly agile team environment, resulting in rapid feature development and deployment cycles, with user requests going live within an hour from ticket creation.',
             },
             {
               content:
-                'Achieved rapid development and deployment cycles, with features going live well ahead of schedule and deployments to production multiple times per day.',
-            },
-            {
-              content:
-                'In 2023, the team made 403 deployments to production. Which means there are more than 1.5 deployments per day, given there are 260 weekdays in 2023.',
-            },
-            {
-              content:
-                'In 2024, counting until April 1st, we had 178 deployments. Which means more than 2.7 deployments per day over the 65 weekdays of Q1 2024.',
+                'Achieved rapid development and deployment cycles, with features going live well ahead of schedule.  Led the team to achieve a deployment frequency of 1.5 per day in 2023 (403 total) and 2.7 per day in Q1 2024 (178 total).',
             },
           ],
         },
@@ -133,57 +125,47 @@ export class ExperienceComponent {
           content: 'Medical Concierge Platform (10/2022 - 06/2024)',
           details: [
             {
-              content: 'Demonstrated strong technical leadership by:',
-              details: [
-                {
-                  content:
-                    'Conceptualizing and prototyping core functionalities: Designed and built a PoC for the initial chat feature utilizing PubNub and internal microservices, which became the foundation for the production system.',
-                },
-                {
-                  content:
-                    'Mastering the technology stack: Quickly grasped and implemented technologies including EKS, Helm, Cloudfront, Jenkins, Sonar, and Terraform for infrastructure management, deployment, and code analysis.',
-                },
-                {
-                  content:
-                    'Devising a successful deployment strategy: Established a continuous deployment pipeline enabling frequent and reliable deployments to production environments.',
-                },
-                {
-                  content:
-                    'Solving technical challenges: Designed a new chat initialization flow with persistent storage to ensure reliable chat handling and agent continuity.',
-                },
-              ],
+              content:
+                'Designed and built a PoC for the initial chat feature using PubNub and internal microservices, forming the foundation for the production system.',
             },
             {
-              content: 'Expanded the platform’s functionality by:',
-              details: [
-                {
-                  content:
-                    'Implementing case & ticket management: Developed a system for agents to track user journeys, including features like automatic doctor suggestions and audit history for comprehensive record-keeping.',
-                },
-                {
-                  content:
-                    'Integrating doctor data & ratings: Designed a local data copy for complex queries and doctor recommendations, while keeping the original data source as the single source of truth. Further implemented automatic doctor rating calculations based on various factors.',
-                },
-                {
-                  content:
-                    'Introducing email automation & SSO integration: Built an email system with pre-filled templates for efficient agent communication, and integrated the app with the company’s SSO system for secure and streamlined agent login.',
-                },
-              ],
+              content:
+                'Rapidly mastered and implemented EKS, Helm, Cloudfront, Jenkins, Sonar, and Terraform for infrastructure management, deployment, and code analysis.',
+            },
+            {
+              content:
+                'Established a continuous deployment pipeline, enabling frequent and reliable production releases.',
+            },
+            {
+              content:
+                'Designed a new chat initialization flow with persistent storage, ensuring reliable chat handling and agent continuity.',
+            },
+            {
+              content:
+                'Developed a case and ticket management system for agents, including automatic doctor suggestions and audit history, to track user journeys.',
+            },
+            {
+              content:
+                'Integrated doctor data and ratings, including a local data copy for complex queries and recommendations, while maintaining the original data source as the single source of truth. Implemented automatic doctor rating calculations.',
+            },
+            {
+              content:
+                'Integrated email automation with pre-filled templates for efficient agent communication, and implemented SSO for secure agent login.',
             },
             {
               content: 'Tech stack:',
               details: [
                 {
                   content:
-                    'BE: Java Spring Boot & Hibernate deployed to AWS EKS, with AWS RDS (MySQL)',
+                    'BE: Java Spring Boot and Hibernate deployed to AWS EKS, with AWS RDS (MySQL).',
                 },
                 {
                   content:
-                    'FE: Next.js (React-based) deployed to AWS CloudFront',
+                    'FE: Next.js (React-based) deployed to AWS CloudFront.',
                 },
                 {
                   content:
-                    'Infra: Jenkins pipelines, Terraform & Terragrunt infra-as-code',
+                    'Infra: Jenkins pipelines, Terraform and Terragrunt infra-as-code.',
                 },
               ],
             },
@@ -194,26 +176,26 @@ export class ExperienceComponent {
           details: [
             {
               content:
-                'Leveraged Hugging Face’s chat-ui repository to create a private fork and customize it for company needs, including integration to the company’s SSO system.',
+                'Customized a private fork of Hugging Face’s chat-ui repository for company needs, including SSO integration.',
             },
             {
               content:
-                'Established a highly secure infrastructure pipeline by running Terraform from Bitbucket Pipelines with OIDC authentication and no secrets stored in Bitbucket.',
+                'Established a highly secure infrastructure pipeline using Terraform from Bitbucket pipelines with OIDC authentication, ensuring no secrets were stored in Bitbucket.',
             },
             {
               content:
-                'Delivered the portal well ahead of the tight Q1 2024 deadline, achieving zero production incidents during launch.',
+                'Delivered the portal ahead of schedule, with zero production incidents at launch.',
             },
             {
               content: 'Tech stack:',
               details: [
                 {
                   content:
-                    'Fullstack Node.js application with SvelteKit deployed to AWS ECS, with MongoDB Atlas',
+                    'Fullstack Node.js application with SvelteKit deployed to AWS ECS, with MongoDB Atlas.',
                 },
                 {
                   content:
-                    'Infra: Bitbucket Pipelines, Terraform & Terragrunt infra-as-code',
+                    'Infra: Bitbucket Pipelines, Terraform and Terragrunt infra-as-code.',
                 },
               ],
             },
@@ -227,15 +209,15 @@ export class ExperienceComponent {
       date: '02/2022 - 10/2022',
       details: [
         {
-          content: 'Internal Billing & Reporting Team',
+          content: 'Internal Billing and Reporting Team',
           details: [
             {
               content:
-                'Billing main tech stack: Java with Google Guice & MyBatis backend, PostgreSQL, CI/CD with Jenkins pipelines & AWS infrastructure managed by Terraform & Ansible',
+                'Billing main tech stack: Java with Google Guice and MyBatis backend, PostgreSQL, CI/CD with Jenkins pipelines and AWS infrastructure managed by Terraform and Ansible.',
             },
             {
               content:
-                'Reporting main tech stack: Apache Airflow for ETL, Apache Superset for data visualization & analysis, PostgreSQL, CI/CD with Jenkins pipelines & AWS infrastructure managed by Terraform & Ansible',
+                'Reporting main tech stack: Apache Airflow for ETL, Apache Superset for data visualization and analysis, PostgreSQL, CI/CD with Jenkins pipelines and AWS infrastructure managed by Terraform and Ansible.',
             },
           ],
         },
@@ -244,15 +226,15 @@ export class ExperienceComponent {
           details: [
             {
               content:
-                'Set up & integrated the whole reporting platform from scratch with Apache Airflow, Apache Superset, & PostgreSQL',
+                'Set up and integrated the whole reporting platform from scratch with Apache Airflow, Apache Superset, and PostgreSQL.',
             },
             {
               content:
-                'Implemented multiple PoC visualization charts that are highly appreciated by Product team',
+                'Implemented multiple highly-regarded PoC visualization charts for the Product team.',
             },
             {
               content:
-                'Led 2 big refactoring efforts in billing system to consolidate tiny micro services & clean up billing calculations so more complex & transparent reports could be made',
+                'Led 2 big refactoring efforts in billing system to consolidate tiny micro services and clean up billing calculations so more complex and transparent reports could be made.',
             },
           ],
         },
@@ -268,15 +250,15 @@ export class ExperienceComponent {
           details: [
             {
               content:
-                'Manage a pool of 8 coachees, support them on both professional & personal development',
+                'Managed a pool of 8 coachees, supporting their professional and personal development.',
             },
             {
               content:
-                'Work closely with team leads to ensure engagement & performance',
+                'Worked closely with team leads to ensure engagement and performance.',
             },
             {
               content:
-                'Work closely with HR on recruitment / performance review / compensation',
+                'Worked closely with HR on recruitment / performance review / compensation.',
             },
           ],
         },
@@ -284,12 +266,10 @@ export class ExperienceComponent {
           content: 'Achievements:',
           details: [
             {
-              content:
-                'Was rated as the best Career Coach of VN office with high coachees satisfaction & low attrition rate',
+              content: 'Recognized as the top Career Coach in the VN office.',
             },
             {
-              content:
-                'Was loved by coachees that several asked for continued coaching outside company',
+              content: 'Achieved high coachee satisfaction and low attrition.',
             },
           ],
         },
@@ -306,22 +286,22 @@ export class ExperienceComponent {
           details: [
             {
               content:
-                'Main tech stack: Java Spring Boot microservices backend, PostgreSQL, Keycloak for IAM & RBAC, CI/CD with GitHub Actions deploy as Docker clusters on on-premise VMs',
+                'Main tech stack: Java Spring Boot microservices backend, PostgreSQL, Keycloak for IAM and RBAC, CI/CD with GitHub Actions deploy as Docker clusters on on-premise VMs.',
             },
             {
               content: 'Achievements:',
               details: [
                 {
                   content:
-                    'Implemented IAM using Keycloak, synchronized with legacy system',
+                    'Implemented IAM using Keycloak to synchronize with a legacy system, resulting in streamlined access control.',
                 },
                 {
                   content:
-                    'Implemented RBAC using Keycloak & Spring AOP with complex business rules at entity level',
+                    'Implemented RBAC using Keycloak and Spring AOP with complex business rules at entity level.',
                 },
                 {
                   content:
-                    'Contributed several ideas on improving JWT flow as well as reducing token size',
+                    'Contributed ideas to improve JWT flow and reduce token size, leading to reduced network bandwidth requirements and improved response times.',
                 },
               ],
             },
@@ -333,22 +313,22 @@ export class ExperienceComponent {
           details: [
             {
               content:
-                'Main tech stack: Java Spring Boot backend, Angular frontend, MariaDB, CI/CD with GoCD pipelines & Azure infrastructure managed by Terraform & Ansible',
+                'Main tech stack: Java Spring Boot backend, Angular frontend, MariaDB, CI/CD with GoCD pipelines and Azure infrastructure managed by Terraform and Ansible.',
             },
             {
               content: 'Achievements:',
               details: [
                 {
                   content:
-                    'Was owner of the whole Azure infrastructure, optimized usage to save cost while facilitate local development at the same time',
+                    'Owned and optimized the Azure infrastructure, resulting in significant cost reduction while facilitating local development.',
                 },
                 {
                   content:
-                    'Refactors ETL component to improve stability & eliminate duplicated code',
+                    'Refactored the ETL component to improve stability and eliminate code duplication..',
                 },
                 {
                   content:
-                    'Wrote several automation scripts that save time on repeated tasks',
+                    'Developed automation scripts that reduced time spent on repetitive tasks.',
                 },
               ],
             },
@@ -360,22 +340,22 @@ export class ExperienceComponent {
           details: [
             {
               content:
-                'Main tech stack: .NET Framework / Core backend, Angular frontend, Microsoft SQL, CI/CD with GoCD pipelines & on-premise VMs deployed by PowerShell scripts',
+                'Main tech stack: .NET Framework / Core backend, Angular frontend, Microsoft SQL, CI/CD with GoCD pipelines and on-premise VMs deployed by PowerShell scripts.',
             },
             {
               content: 'Achievements:',
               details: [
                 {
                   content:
-                    'Wrote PowerShell scripts from scratch to deploy backend & frontend components automatically',
+                    'Developed PowerShell scripts to automate the deployment of backend and frontend components.',
                 },
                 {
                   content:
-                    'Wrote PowerShell scripts to invoke .NET Entity Framework to perform DB schema migration',
+                    'Developed PowerShell scripts to automate .NET Entity Framework DB schema migrations.',
                 },
                 {
                   content:
-                    'Delivered multiple full stack features ahead of schedule',
+                    'Consistently delivered full-stack features ahead of schedule.',
                 },
               ],
             },
@@ -387,26 +367,26 @@ export class ExperienceComponent {
           details: [
             {
               content:
-                'Main tech stack: Java Spring backend, Java Eclipse RCP frontend, Oracle DB, CI/CD with Jenkins pipelines & on-premise VMs',
+                'Main tech stack: Java Spring backend, Java Eclipse RCP frontend, Oracle DB, CI/CD with Jenkins pipelines and on-premise VMs.',
             },
             {
               content: 'Achievements:',
               details: [
                 {
                   content:
-                    'Suggested & implemented complex GUI features using existing simple components',
+                    'Designed and implemented complex GUI features using existing components.',
                 },
                 {
                   content:
-                    'Refactored multiple pieces of legacy code to implement new features with complex requirements',
+                    'Refactored legacy code to implement new features with complex requirements.',
                 },
                 {
                   content:
-                    'Wrote several guides on setting up local development with complex dependencies between components',
+                    'Created guides for setting up local development with complex component dependencies.',
                 },
                 {
                   content:
-                    'Was main person in VN team to troubleshoot servers & Flyway migrations',
+                    'Led troubleshooting for server issues and Flyway migrations for the VN team.',
                 },
               ],
             },
@@ -416,7 +396,7 @@ export class ExperienceComponent {
     },
     {
       title: 'Software Engineer',
-      name: 'Robert Bosch Engineering & Business Solutions Vietnam',
+      name: 'Robert Bosch Engineering and Business Solutions Vietnam',
       date: '03/2015 - 06/2017',
       details: [
         {
@@ -424,11 +404,11 @@ export class ExperienceComponent {
             'Scripting / Automation engineer in Greenfield Architecture team:',
           details: [
             {
-              content: 'Worked directly with architects in Germany & India',
+              content: 'Worked directly with architects in Germany and India.',
             },
             {
               content:
-                'Worked on various languages (Python, VBA, Java) to analyze, visualize, & display dependency tree of automotive C code',
+                'Worked on various languages (Python, VBA, Java) to analyze, visualize, and display dependency tree of automotive C code.',
             },
           ],
         },
@@ -437,11 +417,11 @@ export class ExperienceComponent {
           details: [
             {
               content:
-                'Automated tasks that used to require a full person-month of work to be done in 15 minutes',
+                'Automated tasks that reduced a full person-month of work to 15 minutes.',
             },
             {
               content:
-                'Suggested & implemented innovative visualizations of a component’s upstream & downstream dependencies, contributed directly to a white paper published in Germany',
+                'Designed and implemented innovative visualizations of component dependencies, contributing directly to a white paper published in Germany.',
             },
           ],
         },
