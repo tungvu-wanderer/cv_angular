@@ -14,6 +14,88 @@ import { NgFor } from '@angular/common';
 export class ExperienceComponent {
   companies: Company[] = [
     {
+      title: 'Staff Engineer',
+      name: 'BlueSG',
+      date: '02/2025 - Current',
+      details: [
+        {
+          content: 'Building the new event driven architecture',
+          details: [
+            {
+              content:
+                'Stepped up as acting Scrum Master, coordinating daily team tasks to ensure smooth sprint execution and goal completion.',
+            },
+            {
+              content:
+                'Driving the implementation of the pre-defined major refactoring effort to replace the existing rental system with a new event-driven architecture (EDA) aimed at reducing latency, improving reliability while allowing scalability to meet planned business goals.',
+            },
+            {
+              content:
+                'Rapidly implemented a PoC of the EDA using AWS Lambda with CI/CD via AWS CDK, validating its integration with existing NestJS microservices.',
+            },
+            {
+              content:
+                'Established new codebases and CI/CD pipelines (CircleCI) for Lambda-based microservices and their infrastructure (AWS CDK).',
+            },
+            {
+              content:
+                'Author and contribute to the PRDs & ERDs for refactoring work packages, ensuring technical feasibility and providing clear implementation guidance for the team.',
+            },
+          ],
+        },
+        {
+          content: 'Maintaining the current system',
+          details: [
+            {
+              content:
+                'Maintaining the current Typescript NestJS microservices system on AWS ECS, PostgreSQL (AWS RDS), with CI/CD via CircleCI & Terraform.',
+            },
+            {
+              content:
+                'Significantly reduced build wait time for the current system from ~20m to ~5m by leveraging CircleCI parallelism.',
+            },
+          ],
+        },
+      ],
+    },
+    {
+      title: 'Senior Software Engineer',
+      name: 'Primrose Capital Management',
+      date: '07/2024 - 01/2025',
+      details: [
+        {
+          content: 'Technology Team',
+          details: [
+            {
+              content:
+                'Collaborated directly with Portfolio Managers to gather requirements and deliver solutions that directly supported trading activities.',
+            },
+            {
+              content:
+                'Leveraged Python Flask microservices on AWS ECS and PostgreSQL (AWS RDS) with CI/CD via Bitbucket Pipelines & AWS CDK.',
+            },
+          ],
+        },
+        {
+          content: 'Achievements:',
+          details: [
+            {
+              content:
+                'Successfully backfilled multi-year historical trading data from multiple crypto exchanges into a PostgreSQL timeseries database with partitioned tables, enabling more comprehensive historical analysis.',
+            },
+            {
+              content:
+                'Led a refactoring of the backtest reporting workflow, improving traceability and enabling clear visualization of backtest results for better decision-making.',
+            },
+            {
+              content:
+                'Designed and implemented a PoC, using Java Spring Boot microservices with Protobuf over WebSocket, to evaluate and integrate a new 3rd party SaaS providing real-time market data and order execution features, laying the groundwork for the development of a new low-latency internal market making system.',
+            },
+          ],
+        },
+      ],
+    },
+    {
       title: 'Engineering Manager',
       name: 'Doctor Anywhere',
       date: '10/2022 - 06/2024',
@@ -55,7 +137,7 @@ export class ExperienceComponent {
               details: [
                 {
                   content:
-                    'Conceptualizing and prototyping core functionalities: Designed and built a proof-of-concept (PoC) for the initial chat feature utilizing PubNub and internal microservices, which became the foundation for the production system.',
+                    'Conceptualizing and prototyping core functionalities: Designed and built a PoC for the initial chat feature utilizing PubNub and internal microservices, which became the foundation for the production system.',
                 },
                 {
                   content:
@@ -116,7 +198,7 @@ export class ExperienceComponent {
             },
             {
               content:
-                'Established a highly secure infrastructure pipeline by running Terraform from Bitbucket pipelines with OIDC authentication and no secrets stored in Bitbucket.',
+                'Established a highly secure infrastructure pipeline by running Terraform from Bitbucket Pipelines with OIDC authentication and no secrets stored in Bitbucket.',
             },
             {
               content:
@@ -131,7 +213,7 @@ export class ExperienceComponent {
                 },
                 {
                   content:
-                    'Infra: Bitbucket pipelines, Terraform & Terragrunt infra-as-code',
+                    'Infra: Bitbucket Pipelines, Terraform & Terragrunt infra-as-code',
                 },
               ],
             },
