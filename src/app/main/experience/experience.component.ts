@@ -19,41 +19,48 @@ export class ExperienceComponent {
       date: '02/2025 - Current',
       details: [
         {
-          content: 'Building the new event driven architecture',
+          content: 'Spearheaded the implementation of a new event-driven architecture (EDA)',
           details: [
+            { content: 'The goal is to replace the existing rental system, significantly reducing latency, improving reliability, and enabling scalability for planned business growth.' },
             {
               content:
-                'Stepped up as acting Scrum Master, coordinating daily team tasks to ensure smooth sprint execution and goal completion.',
+                'Rapidly prototyped and validated an AWS Lambda-based EDA with integrated CI/CD (AWS CDK), proving seamless integration with existing NestJS microservices.',
             },
             {
               content:
-                'Driving the implementation of the pre-defined major refactoring effort to replace the existing rental system with a new event-driven architecture (EDA) aimed at reducing latency, improving reliability while allowing scalability to meet planned business goals.',
+                'Established new codebases and automated CI/CD pipelines (CircleCI, AWS CDK) for Lambda-based microservices.',
             },
             {
               content:
-                'Rapidly implemented a PoC of the EDA using AWS Lambda with CI/CD via AWS CDK, validating its integration with existing NestJS microservices.',
+                'Acted as Scrum Master, coordinating daily tasks for a cross-functional team to ensure smooth sprint execution and goal achievement.',
             },
             {
               content:
-                'Established new codebases and CI/CD pipelines (CircleCI) for Lambda-based microservices and their infrastructure (AWS CDK).',
+                'Authored and contributed to PRDs and ERDs for major refactoring work packages, ensuring technical feasibility and guiding implementation.',
             },
             {
               content:
-                'Author and contribute to the PRDs and ERDs for refactoring work packages, ensuring technical feasibility and providing clear implementation guidance for the team.',
+                'Led development and integration of a critical real-time car availability feature, processing legacy events to ensure users receive accurate fleet status updates.',
             },
           ],
         },
         {
-          content: 'Maintaining the current system',
+          content: 'Maintaining and improving the legacy system',
           details: [
             {
               content:
-                'Maintaining the current Typescript NestJS microservices system on AWS ECS, PostgreSQL (AWS RDS), with CI/CD via CircleCI and Terraform.',
+                'Maintaining the legacy Typescript NestJS microservices system on AWS ECS, PostgreSQL (AWS RDS), with CI/CD via CircleCI and Terraform.',
             },
             {
               content:
-                'Significantly reduced build wait time for the current system from ~20m to ~5m by leveraging CircleCI parallelism.',
+                'Reduced CI/CD build wait times from ~20 minutes to ~5 minutes (~75% reduction) by leveraging CircleCI parallelism.',
             },
+            {
+              content: 'Analyzed and optimized legacy service log output, reducing daily volume from 48M to 4M entries (~92% reduction) while maintaining critical observability.'
+            },
+            {
+              content: 'Cleaned up and stabilized the legacy service, strategically utilizing feature flags to enable a phased migration of users to the new Lambda-based architecture.'
+            }
           ],
         },
       ],
