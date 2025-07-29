@@ -1,5 +1,11 @@
 # CvAngular
 
+## Live demo
+
+A live version of this repo is available at:
+1. [https://cv.tungvu.uk](https://cv.tungvu.uk)
+2. [https://tungvu-wanderer.github.io/cv_angular](https://tungvu-wanderer.github.io/cv_angular)
+
 ## Development server
 
 To start a local development server, run:
@@ -34,10 +40,6 @@ npm run build
 
 This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-## Running unit tests
+## Deployment
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-npm run test
-```
+A Github Actions workflow is available, using [https://github.com/marketplace/actions/deploy-angular-to-github-pages](https://github.com/marketplace/actions/deploy-angular-to-github-pages) which will publish a Github Page at `https://[github_username].github.io/[github_repo]/`
