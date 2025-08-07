@@ -15,6 +15,13 @@ import { NgFor } from '@angular/common';
 export class CertificationComponent {
   certifications: Certification[] = [
     {
+      name: 'AWS Certified Solutions Architect – Associate',
+      url: 'https://www.credly.com/badges/2ed7ba6a-2a67-498f-a74f-7060f7cd538f',
+      issuer: 'Amazon Web Services Training and Certification',
+      dateIssued: '08/2025',
+      dateExpired: '08/2028',
+    },
+    {
       name: 'Machine Learning',
       url: 'https://www.coursera.org/account/accomplishments/certificate/44SQ9WT4HC32',
       issuer: 'Coursera',

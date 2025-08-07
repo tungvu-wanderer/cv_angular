@@ -21,7 +21,9 @@ export class ExperienceComponent {
         {
           content: 'Spearheaded the implementation of a new event-driven architecture (EDA)',
           details: [
-            { content: 'The goal is to replace the existing rental system, significantly reducing latency, improving reliability, and enabling scalability for planned business growth.' },
+            {
+              content: 'The goal is to replace the existing rental system, significantly reducing latency, improving reliability, and enabling scalability for planned business growth.'
+            },
             {
               content:
                 'Rapidly prototyped and validated an AWS Lambda-based EDA with integrated CI/CD (AWS CDK), proving seamless integration with existing NestJS microservices.',
@@ -39,8 +41,16 @@ export class ExperienceComponent {
                 'Authored and contributed to PRDs and ERDs for major refactoring work packages, ensuring technical feasibility and guiding implementation.',
             },
             {
-              content:
-                'Led development and integration of a critical real-time car availability feature, processing legacy events to ensure users receive accurate fleet status updates.',
+              content: 'Led the development and integration of multiple impactful features:',
+              details: [
+                {
+                  content:
+                    'A critical real-time car availability feature, processing legacy events to ensure users receive accurate fleet status updates.',
+                },
+                {
+                  content: 'A complex parking hijack prevention feature, integrating tightly with third parties to ensure reserved parking lots are not hijacked while flexibly arranging available parking lots for optimal user convenience.'
+                }
+              ]
             },
           ],
         },
@@ -56,7 +66,7 @@ export class ExperienceComponent {
                 'Reduced CI/CD build wait times from ~20 minutes to ~5 minutes (~75% reduction) by leveraging CircleCI parallelism.',
             },
             {
-              content: 'Analyzed and optimized legacy service log output, reducing daily volume from 48M to 4M entries (~92% reduction) while maintaining critical observability.'
+              content: 'Analyzed and optimized log output of legacy services, reducing daily volume by 92% (from 48M to 4M entries) while preserving critical observability.'
             },
             {
               content: 'Cleaned up and stabilized the legacy service, strategically utilizing feature flags to enable a phased migration of users to the new Lambda-based architecture.'
