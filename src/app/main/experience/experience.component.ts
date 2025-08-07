@@ -16,7 +16,7 @@ export class ExperienceComponent {
     {
       title: 'Staff Engineer',
       name: 'BlueSG',
-      date: '02/2025 - Current',
+      date: '02/2025 - 08/2025',
       details: [
         {
           content: 'Spearheaded the implementation of a new event-driven architecture (EDA)',
